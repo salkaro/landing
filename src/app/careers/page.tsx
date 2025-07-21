@@ -45,7 +45,7 @@ export const metadata = {
 export default function Careers() {
     return (
         <div className="w-full bg-background">
-            <div className="container mx-auto">
+            <div className="container sm:mx-auto">
                 {/* Hero */}
                 <div className="flex gap-8 py-20 lg:py-40 items-center justify-center flex-col">
                     <Badge variant="outline">Careers</Badge>
@@ -60,7 +60,7 @@ export default function Careers() {
                 </div>
 
                 {/* Why Work With Us */}
-                <section className="py-20 lg:py-40 bg-muted rounded-lg">
+                <section className="px-2 sm:px-0 py-20 lg:py-40 bg-muted rounded-lg">
                     <h2 className="text-3xl md:text-5xl font-regular mb-6 text-center">
                         Why You’ll Love It Here
                     </h2>

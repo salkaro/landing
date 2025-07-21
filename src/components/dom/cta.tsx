@@ -15,7 +15,7 @@ export const CTA = () => {
                     <div>
                         <Badge>Get started</Badge>
                     </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 px-4 sm:px-0">
                         <h3 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular">
                             Try our IoT platform today!
                         </h3>
@@ -23,7 +23,7 @@ export const CTA = () => {
                             Connect, monitor, and control your devices seamlessly with real-time data insights and powerful API integrations. Start optimizing your operations now with our easy-to-use platform built for businesses of all sizes.
                         </p>
                     </div>
-                    <div className="flex flex-row gap-4">
+                    <div className="flex flex-col sm:flex-row gap-4">
                         <Button className="gap-4" variant="outline" onClick={() => router.push("https://docs.salkaro.com")}>
                             Documentation <BookText className="w-4 h-4" />
                         </Button>
