@@ -33,6 +33,10 @@ export const Footer = () => {
                     href: "/about",
                 },
                 {
+                    title: "Releases",
+                    href: "/releases",
+                },
+                {
                     title: "Blog",
                     href: "https://blog.salkaro.com",
                 },
