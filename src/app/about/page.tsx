@@ -1,5 +1,48 @@
 import { Badge } from "@/components/ui/badge";
 
+
+export const metadata = {
+    title: "About Salkaro – Our Mission and Vision for IoT Innovation",
+    description:
+        "Learn about Salkaro’s mission to simplify IoT device management. Discover how we empower developers and businesses to build scalable, secure IoT solutions.",
+    keywords: [
+        "Salkaro",
+        "About",
+        "IoT innovation",
+        "mission",
+        "vision",
+        "device management",
+        "technology",
+        "scalability",
+        "security",
+        "IoT platform",
+    ],
+    openGraph: {
+        title: "About Salkaro – Empowering IoT Device Management",
+        description:
+            "Discover Salkaro’s story, mission, and commitment to making IoT device management seamless, secure, and scalable for developers and businesses.",
+        url: "https://salkaro.com/about",
+        siteName: "Salkaro",
+        images: [
+            {
+                url: "https://i.imgur.com/2UakBhJ.png",
+                width: 2523,
+                height: 1439,
+                alt: "Salkaro About Us",
+            },
+        ],
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "About Salkaro – Our IoT Mission",
+        description:
+            "Explore how Salkaro is revolutionizing IoT device management with secure, scalable solutions designed for developers and enterprises.",
+        images: ["https://i.imgur.com/2UakBhJ.png"],
+    },
+};
+
+
 export default function About() {
     return (
         <div className="w-full min-h-screen bg-background">

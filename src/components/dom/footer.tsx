@@ -80,7 +80,7 @@ export const Footer = () => {
                                 Salkaro
                             </h2>
                             <p className="text-lg max-w-lg leading-relaxed tracking-tight text-background/75 text-left">
-                                Managing a small business today is already tough.
+                                Powering modern trade and device infrastructure.
                             </p>
                         </div>
                         <div className="flex gap-20 flex-row">

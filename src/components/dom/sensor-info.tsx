@@ -1,9 +1,10 @@
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 
 export const SensorInfo = () => (
     <div id="sensor-info" className="w-full py-20 lg:py-40">
         <div className="container mx-auto">
-            <div className="flex flex-col lg:flex-row gap-10 lg:items-center">
+            <div className="relative flex flex-col lg:flex-row gap-10 lg:items-center">
                 <div className="flex gap-4 flex-col flex-1">
                     <div>
                         <Badge>Platform</Badge>
@@ -17,7 +18,9 @@ export const SensorInfo = () => (
                         </p>
                     </div>
                 </div>
-                <div className="bg-muted rounded-md w-full aspect-video h-full flex-1"></div>
+                <div className="lg:absolute lg:right-[-500px] xl:right-[-420px] 2xl:right-[-300px]">
+                    <Image src="/landing/sensor.svg" alt="Sensor dashboard" width={1000} height={1000} />
+                </div>
             </div>
         </div>
     </div>

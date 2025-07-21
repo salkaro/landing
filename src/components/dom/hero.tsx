@@ -35,7 +35,7 @@ export const Hero = () => {
                             </Button>
                         </div>
                     </div>
-                    <div className="z-20 opacity-40 sm:opacity-100 top-10 border-0 border-red-500 lg:col-span-1 absolute sm:static w-full h-[500px] sm:top-0 left-0">
+                    <div className="z-20 opacity-70 sm:opacity-100 top-10 border-0 border-red-500 lg:col-span-1 absolute sm:static w-full h-[500px] sm:top-0 left-0">
                         <Globe />
                     </div>
                 </div>

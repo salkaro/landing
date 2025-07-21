@@ -1,102 +1,47 @@
-"use client";
+import Page from "@/components/ui/contact";
 
-import { CalendarIcon, Mail, MoveRight } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Calendar } from "@/components/ui/calendar";
-import { useState } from "react";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { cn } from "@/lib/utils";
-import { format } from "date-fns";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-
+export const metadata = {
+    title: "Contact Us – Salkaro",
+    description:
+        "Have a question or want to get started with Salkaro? Reach out to our team and we’ll help you connect, manage, and scale your IoT devices effectively.",
+    keywords: [
+        "contact Salkaro",
+        "Salkaro support",
+        "IoT help",
+        "device onboarding",
+        "sensor integration",
+        "customer support",
+        "reach out",
+        "tech support",
+        "firmware help",
+    ],
+    openGraph: {
+        title: "Contact Salkaro",
+        description:
+            "Talk to our team to get help with setting up your devices, managing firmware, or learning more about our IoT platform.",
+        url: "https://salkaro.com/contact",
+        siteName: "Salkaro",
+        images: [
+            {
+                url: "https://i.imgur.com/2UakBhJ.png",
+                width: 2523,
+                height: 1439,
+                alt: "Salkaro Contact",
+            },
+        ],
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Get in Touch – Salkaro",
+        description:
+            "Need help or have questions about IoT device integration? Contact Salkaro's team today.",
+        images: ["https://i.imgur.com/2UakBhJ.png"],
+    },
+};
 
 export default function Contact() {
-    const [date, setDate] = useState<Date | undefined>(new Date());
-
     return (
-        <div className="w-full py-20 lg:py-40 min-h-screen">
-            <div className="container max-w-6xl mx-auto">
-                <div className="grid lg:grid-cols-2 gap-10">
-                    <div className="flex flex-col gap-6">
-                        <div className="flex flex-col gap-4">
-                            <Badge variant="outline">Contact Us</Badge>
-                            <h2 className="text-3xl md:text-5xl font-regular tracking-tighter">
-                                Let’s build something great together
-                            </h2>
-                            <p className="text-lg text-muted-foreground max-w-md leading-relaxed">
-                                Whether you need a demo, technical support, or just want to say hello,
-                                our team is here to help. Pick your preferred way to reach out below.
-                            </p>
-
-                            <div className="flex flex-row gap-4 items-start">
-                                <Mail className="w-5 h-5 text-primary mt-1" />
-                                <div>
-                                    <p className="font-semibold">Email Support</p>
-                                    <p className="text-sm text-muted-foreground">support@salkaro.com</p>
-                                </div>
-                            </div>
-
-                            <div className="flex flex-row gap-4 items-start">
-                                <Mail className="w-5 h-5 text-primary mt-1" />
-                                <div>
-                                    <p className="font-semibold">General Inquiries</p>
-                                    <p className="text-sm text-muted-foreground">hello@salkaro.com</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div className="justify-center flex items-center">
-                        <div className="rounded-md max-w-sm flex flex-col border p-8 gap-4">
-                            <p>Book a meeting</p>
-                            <div className="grid w-full max-w-sm items-center gap-1">
-                                <Label htmlFor="picture">Date</Label>
-                                <Popover>
-                                    <PopoverTrigger asChild>
-                                        <Button
-                                            variant={"outline"}
-                                            className={cn(
-                                                "w-full max-w-sm justify-start text-left font-normal",
-                                                !date && "text-muted-foreground"
-                                            )}
-                                        >
-                                            <CalendarIcon className="mr-2 h-4 w-4" />
-                                            {date ? format(date, "PPP") : <span>Pick a date</span>}
-                                        </Button>
-                                    </PopoverTrigger>
-                                    <PopoverContent className="w-auto p-0">
-                                        <Calendar
-                                            mode="single"
-                                            selected={date}
-                                            onSelect={setDate}
-                                            initialFocus
-                                        />
-                                    </PopoverContent>
-                                </Popover>
-                            </div>
-                            <div className="grid w-full max-w-sm items-center gap-1">
-                                <Label htmlFor="firstname">First name</Label>
-                                <Input id="firstname" type="text" />
-                            </div>
-                            <div className="grid w-full max-w-sm items-center gap-1">
-                                <Label htmlFor="lastname">Last name</Label>
-                                <Input id="lastname" type="text" />
-                            </div>
-                            <div className="grid w-full max-w-sm items-center gap-1">
-                                <Label htmlFor="picture">Upload resume</Label>
-                                <Input id="picture" type="file" />
-                            </div>
-
-                            <Button className="gap-4 w-full">
-                                Book the meeting <MoveRight className="w-4 h-4" />
-                            </Button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <Page />
     );
 }

@@ -1,5 +1,46 @@
 import { Badge } from "@/components/ui/badge";
 
+export const metadata = {
+    title: "Careers at Salkaro – Help Build the Future of IoT",
+    description:
+        "Join the team at Salkaro and help shape the tools that power the future of connected devices. We're hiring engineers, designers, and creatives passionate about IoT.",
+    keywords: [
+        "Salkaro careers",
+        "IoT jobs",
+        "hardware jobs",
+        "embedded systems",
+        "firmware engineering",
+        "tech startup jobs",
+        "join our team",
+        "Salkaro hiring",
+        "connected devices",
+        "remote tech jobs",
+    ],
+    openGraph: {
+        title: "Careers at Salkaro – Build the Future of IoT",
+        description:
+            "Be part of the team simplifying how connected devices are built and managed. Explore career opportunities at Salkaro.",
+        url: "https://salkaro.com/careers",
+        siteName: "Salkaro",
+        images: [
+            {
+                url: "https://i.imgur.com/2UakBhJ.png", // update this if you have a careers-specific image
+                width: 2523,
+                height: 1439,
+                alt: "Careers at Salkaro",
+            },
+        ],
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Join Salkaro – Careers in IoT and Connected Devices",
+        description:
+            "We’re building tools for developers working with embedded hardware. Come shape the future of connected tech with us.",
+        images: ["https://i.imgur.com/2UakBhJ.png"],
+    },
+};
+
 
 export default function Careers() {
     return (

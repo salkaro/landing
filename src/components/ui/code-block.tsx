@@ -13,30 +13,17 @@ const CodeBlockExample = () => {
                 </Button>
             </div>
             <div className="p-4 font-mono text-sm leading-6 text-foreground">
-                <pre className="language-javascript">
-                    <code>{`import React from 'react';
-import fetch from "node-fetch";
+                <pre className="language-javascript overflow-x-auto whitespace-pre max-w-full">
+                    <code>{`curl -X POST "https://api.salkaro.com/v1/upload?org_id={org_id}&sensor_id={sensor_id}" 
+  -H "Content-Type: application/json" 
+  -H "Authorization: Bearer API_KEY" 
+  -d '{
+    "value": 28,
+    "status": "OK",
+    "timestamp": 1752696307
+}'
 
-const url = "https://api.salkaro.com/v1/upload?org_id={org_id}&sensor_id={sensor_id}";
-const apiKey = "API_KEY";
-
-const payload = {
-    value: 28,
-    status: "OK",
-    timestamp: 1752696307,
-};
-
-fetch(url, {
-    method: "POST",
-    headers: {
-    "Content-Type": "application/json",
-    "Authorization": 'Bearer {apiKey}',
-    },
-    body: JSON.stringify(payload),
-})
-    .then((res) => res.json())
-    .then((data) => console.log("Response:", data))
-    .catch((err) => console.error("Error:", err));`}</code>
+`}</code>
                 </pre>
             </div>
         </div>
