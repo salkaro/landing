@@ -59,7 +59,7 @@ export const OrganisationManagement = () => (
                             <div className="flex flex-col gap-1">
                                 <p>Secure access control</p>
                                 <p className="text-muted-foreground text-sm">
-                                    Ensure sensitive data and controls are only available to authorized users.
+                                    Ensure sensitive data and controls are only available to apporized users.
                                 </p>
                             </div>
                         </div>

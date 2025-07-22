@@ -31,7 +31,7 @@ export const Hero = () => {
                                 Documentation <BookText className="w-4 h-4" />
                             </Button>
                             <Button size="lg" className="gap-4">
-                                Sign up here <MoveRight className="w-4 h-4" onClick={() => router.push("https://auth.salkaro.com/sign-up")} />
+                                Sign up here <MoveRight className="w-4 h-4" onClick={() => router.push("https://app.salkaro.com/sign-up")} />
                             </Button>
                         </div>
                     </div>
