@@ -54,7 +54,7 @@ export const Navbar = () => {
                 },
                 {
                     title: "Blog",
-                    href: "https://blog.salkaro.com",
+                    href: "/blog",
                 },
                 {
                     title: "Careers",
